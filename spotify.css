@@ -1,0 +1,342 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+.main {
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+.sidebar {
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem; /*16px*/
+    margin-right: 0.5rem;
+}
+.main-content {
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.75rem 0 1.75rem;
+}
+.music-player {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.nav {
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option {
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option:hover {
+    opacity: 1;
+    transition-duration: 0.25s;
+}
+.nav-option i {
+    font-size: 1.25rem;
+}
+.nav-option a {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.library {
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons {
+    display: flex;
+}
+.lib-option img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.icons i:hover {
+    opacity: 1;
+    transition-duration: 0.25s;
+    cursor: pointer;
+}
+.icons i {
+    font-size: 1.25rem;
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+.box {
+    background-color: #232323;
+    height: 7rem;
+    border-radius: 0.75rem;
+    margin: 0.5rem 0 1.75rem 0;
+    padding: 1rem 1.25rem;
+}
+.box-p1 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.25rem;
+}
+.box-p2 {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+.badge {
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+}
+.badge a {
+    font-weight: 700;
+    color: black;
+}
+.sticky-nav {
+    position: sticky;
+    top: 0px;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+.sticky-nav-icons {
+    margin-left: 1.25rem;
+}
+.sticky-nav-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item {
+    margin-right: 1rem;
+}
+.dark-badge {
+    background-color: black;
+    text-align: center;
+}
+.dark-badge a {
+    color: white;
+    margin-left: 0px;
+}
+.card {
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+}
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-title {
+    font-weight: 600;
+}
+.card-info {
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+.footer {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line {
+    width: 90%;
+    height: 70%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+.music-player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.albums {
+    width: 25%;
+    /* background-color: pink; */
+}
+.player {
+    width: 50%;
+    /* background-color: orange; */
+}
+.controls {
+    width: 25%;
+    /* background-color: green; */
+}
+.player-control-icon {
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-control-icon:hover {
+    opacity: 1;
+}
+.playback-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar {
+    width: 60%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.progress-bar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bb760;
+    border-radius: 50%;
+    margin-top: -0.5rem;
+}
+#create:hover {
+    transform: scale(1.1);
+    background-color: azure;
+    transition-duration: 0.25s;
+}
+#browse:hover {
+    transform: scale(1.1);
+    background-color: azure;
+    transition-duration: 0.25s;
+}
+.hide:hover {
+    background-color: azure;
+    transform: scale(1.1);
+    transition-duration: 0.25s;
+}
+.dark-badge:hover {
+    transform: scale(1.1);
+    transition-duration: 0.25s;
+}
+.fa-circle-play {
+    font-size: 2rem;
+    margin-left: 125px;
+}
+.card:hover {
+    background-color: #2c2a2a;
+    transition-duration: 0.25s;
+    box-shadow: 0px 0px 5px aqua;
+}
+.end {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.end-items {
+    margin-right: 100px;
+}
+.end-items span {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
+ul {
+    line-height: 30px;
+}
+li a {
+    opacity: 0.7;
+}
+.end-items i {
+    margin-left: 30px;
+    font-size: 1.8rem;
+}
+li a:hover {
+    opacity: 1;
+    transition-duration: 0.25s;
+    text-decoration: underline;
+}
+.end-items i:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+/* Media query to hide the element on screens with a maximum width of 600 pixels */
+@media screen and (max-width: 840px) {
+    .hide {
+        display: none;
+    }
+}
+@media screen and (max-width: 675px) {
+    .dark-badge {
+        display: none;
+    }
+}
+@media screen and (max-width: 620px) {
+    .card {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .card-info {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .card {
+        margin-left: 0.5rem;
+        padding: 0px; /* Decrease the margin to 10px on smaller screens */
+    }
+}
+@media screen and (max-width: 675px) {
+    .sidebar {
+        display: none;
+    }
+}
+@media screen and (max-width: 675px) {
+    .playback-bar {
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width: 675px) {
+    .end {
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="logo.png" />
+        <title>Spotify - Web player: Music for everyone</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="spotify.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <base href="/Spotify/" />
+    </head>
+    <body>
+        <div class="main">
+            <div class="sidebar">
+                <div class="nav">
+                    <div class="nav-option" style="opacity: 1">
+                        <i class="fa-solid fa-house" style="color: #ffffff"></i>
+                        <a href="https://open.spotify.com/">Home</a>
+                    </div>
+                    <div class="nav-option">
+                        <i
+                            class="fa-solid fa-magnifying-glass"
+                            style="color: #ffffff"
+                        ></i>
+                        <a href="https://open.spotify.com/search">Search</a>
+                    </div>
+                </div>
+                <div class="library">
+                    <div class="options">
+                        <div class="lib-option nav-option">
+                            <img src="library_icon.png" />
+                            <a href="https://open.spotify.com/">Your Library</a>
+                        </div>
+                        <div class="icons">
+                            <i
+                                class="fa-solid fa-plus"
+                                style="color: #ffffff"
+                            ></i>
+                            <i
+                                class="fa-solid fa-arrow-right"
+                                style="color: #ffffff"
+                            ></i>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge" id="create">
+                            <a
+                                href="https://accounts.spotify.com/en/login?continue=https%3A%2F%2Fopen.spotify.com%2F"
+                                >Create playlist</a
+                            >
+                        </button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcast to follow</p>
+                        <p class="box-p2">
+                            We'll keep you updated on new episodes
+                        </p>
+                        <button class="badge" id="browse">
+                            <a
+                                href="https://open.spotify.com/genre/podcasts-web"
+                                >Browse podcasts</a
+                            >
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="sticky-nav">
+                    <div class="sticky-nav-icons">
+                        <img src="backward_icon.png" />
+                        <img src="forward_icon.png" />
+                    </div>
+                    <div class="sticky-nav-options">
+                        <button class="badge nav-item hide">
+                            <a href="https://www.spotify.com/in-en/premium/"
+                                >Explore Premium</a
+                            >
+                        </button>
+                        <button class="badge nav-item dark-badge">
+                            <a
+                                href="https://www.spotify.com/us/download/windows/"
+                                ><i
+                                    class="fa-regular fa-circle-down"
+                                    style="color: #fff"
+                                ></i
+                                >&nbsp;Install App</a
+                            >
+                        </button>
+                        <a
+                            class="nav-item"
+                            href="https://accounts.spotify.com/en/login?continue=https%3A%2F%2Fwww.spotify.com%2Fus%2Faccount%2Foverview%2F"
+                            ><i
+                                class="fa-regular fa-user"
+                                style="color: #ffffff"
+                            ></i
+                        ></a>
+                    </div>
+                </div>
+
+                <h2>Recently Played</h2>
+                <div class="cards-container">
+                    <a
+                        href="https://open.spotify.com/playlist/37i9dQZEVXbMDoHDwVN2tF"
+                    >
+                        <div class="card">
+                            <img src="card1img.jpeg" class="card-img" />
+                            <i
+                                class="fa-solid fa-circle-play"
+                                style="color: #1bb760"
+                            ></i>
+                            <p class="card-title">Top 50 - Global</p>
+                            <p class="card-info">
+                                Your daily updates of the most played...
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <h2>Trending Now Near You</h2>
+                <div class="cards-container">
+                    <a
+                        href="https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M"
+                    >
+                        <div class="card">
+                            <img src="card7img.jpg" class="card-img" />
+                            <i
+                                class="fa-solid fa-circle-play"
+                                style="color: #1bb760"
+                            ></i>
+                            <p class="card-title">Today's Top Hits</p>
+                            <p class="card-info">
+                                Taylor Swift is on top of the Hottest 50!
+                            </p>
+                        </div>
+                    </a>
+
+                    <a
+                        href="https://open.spotify.com/playlist/37i9dQZF1DX0XUsuxWHRQd"
+                    >
+                        <div class="card">
+                            <img src="card3img.jpg" class="card-img" />
+                            <i
+                                class="fa-solid fa-circle-play"
+                                style="color: #1bb760"
+                            ></i>
+                            <p class="card-title">RapCaviar</p>
+                            <p class="card-info">
+                                New music form Lil Uzi Vert,Lil Tzay and...
+                            </p>
+                        </div>
+                    </a>
+
+                    <a
+                        href="https://open.spotify.com/playlist/37i9dQZF1DX5Ejj0EkURtP"
+                    >
+                        <div class="card">
+                            <img src="card2img.jpg" class="card-img" />
+                            <i
+                                class="fa-solid fa-circle-play"
+                                style="color: #1bb760"
+                            ></i>
+                            <p class="card-title">All Out 2010s</p>
+                            <p class="card-info">The biggest songs of 2010s</p>
+                        </div>
+                    </a>
+
+                    <a
+                        href="https://open.spotify.com/playlist/37i9dQZF1DWXRqgorJj26U"
+                    >
+                        <div class="card">
+                            <img src="card4img.jpg" class="card-img" />
+                            <i
+                                class="fa-solid fa-circle-play"
+                                style="color: #1bb760"
+                            ></i>
+                            <p class="card-title">Rock Classics</p>
+                            <p class="card-info">
+                                Rock legends & epic songs that continue...
+                            </p>
+                        </div>
+                    </a>
+
+                    <a
+                        href="https://open.spotify.com/playlist/37i9dQZF1DX4WYpdgoIcn6"
+                    >
+                        <div class="card">
+                            <img src="card8img.jpg" class="card-img" />
+                            <i
+                                class="fa-solid fa-circle-play"
+                                style="color: #1bb760"
+                            ></i>
+                            <p class="card-title">Chill Hits</p>
+                            <p class="card-info">
+                                Kick back to the best new and recent chill...
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <h2>Sound of India</h2>
+                <div class="cards-container">
+                    <a
+                        href="https://open.spotify.com/playlist/3MSEZ4IGrSMnWNIwnYmPtd"
+                    >
+                        <div class="card">
+                            <img src="mumbai.jpg" class="card-img" />
+                            <i
+                                class="fa-solid fa-circle-play"
+                                style="color: #1bb760"
+                            ></i>
+                            <p class="card-title">The sound of ...</p>
+                            <p class="card-info">
+                                The songs that define,unite and...
+                            </p>
+                        </div>
+                    </a>
+
+                    <a
+                        href="https://open.spotify.com/playlist/6V9jhLfmJXsdkaCtdLoiZr"
+                    >
+                        <div class="card">
+                            <img src="kolkatta.jpg" class="card-img" />
+                            <i
+                                class="fa-solid fa-circle-play"
+                                style="color: #1bb760"
+                            ></i>
+                            <p class="card-title">The sound of ...</p>
+                            <p class="card-info">
+                                The songs that define,unite and...
+                            </p>
+                        </div>
+                    </a>
+
+                    <a
+                        href="https://open.spotify.com/playlist/10istDPCOPLqoiSUPuFhkg"
+                    >
+                        <div class="card">
+                            <img src="delhi.jpg" class="card-img" />
+                            <i
+                                class="fa-solid fa-circle-play"
+                                style="color: #1bb760"
+                            ></i>
+                            <p class="card-title">The sound of ...</p>
+                            <p class="card-info">
+                                The songs that define,unite and...
+                            </p>
+                        </div>
+                    </a>
+
+                    <a
+                        href="https://open.spotify.com/playlist/6J01WgQNYVsItQHFl9t8hD"
+                    >
+                        <div class="card">
+                            <img src="bengaluru.jpg" class="card-img" />
+                            <i
+                                class="fa-solid fa-circle-play"
+                                style="color: #1bb760"
+                            ></i>
+                            <p class="card-title">The sound of ...</p>
+                            <p class="card-info">
+                                The songs that define,unite and...
+                            </p>
+                        </div>
+                    </a>
+
+                    <a
+                        href="https://open.spotify.com/playlist/08QV4kzSYj9EkLhFlBpr47"
+                    >
+                        <div class="card">
+                            <img src="chennai.jpg" class="card-img" />
+                            <i
+                                class="fa-solid fa-circle-play"
+                                style="color: #1bb760"
+                            ></i>
+                            <p class="card-title">The sound of ...</p>
+                            <p class="card-info">
+                                The songs that define,unite and...
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="end">
+                    <div class="end-items">
+                        <span>Company</span>
+                        <ul>
+                            <li>
+                                <a
+                                    href="https://www.spotify.com/in-en/about-us/contact/"
+                                    >About</a
+                                >
+                            </li>
+                            <li>
+                                <a href="https://www.lifeatspotify.com/"
+                                    >Jobs</a
+                                >
+                            </li>
+                            <li><a href="#">For the record</a></li>
+                        </ul>
+                    </div>
+                    <div class="end-items">
+                        <span>Communities</span>
+                        <ul>
+                            <li><a href="#">For Artists</a></li>
+                            <li><a href="#">Developers</a></li>
+                            <li><a href="#">Advertising</a></li>
+                            <li><a href="#">Investors</a></li>
+                            <li><a href="#">Vendors</a></li>
+                            <li><a href="#">Spotify for Work</a></li>
+                        </ul>
+                    </div>
+                    <div class="end-items">
+                        <span>Useful Links</span>
+                        <ul>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Free Mobile App</a></li>
+                        </ul>
+                    </div>
+                    <div class="end-items">
+                        <a href="https://www.instagram.com/spotify/"
+                            ><i
+                                class="fa-brands fa-instagram"
+                                style="color: #ffffff"
+                            ></i
+                        ></a>
+                        <a
+                            href="https://twitter.com/i/flow/login?redirect_after_login=%2Fspotify"
+                            ><i
+                                class="fa-brands fa-twitter"
+                                style="color: #ffffff"
+                            ></i
+                        ></a>
+                        <a href="https://www.facebook.com/Spotify"
+                            ><i
+                                class="fa-brands fa-facebook"
+                                style="color: #ffffff"
+                            ></i
+                        ></a>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="line"></div>
+                </div>
+            </div>
+
+            <div class="music-player">
+                <div class="albums"></div>
+                <div class="player">
+                    <div class="player-controls">
+                        <img
+                            src="player_icon1.png"
+                            class="player-control-icon"
+                        />
+                        <img
+                            src="player_icon2.png"
+                            class="player-control-icon"
+                        />
+                        <img
+                            src="player_icon3.png"
+                            class="player-control-icon"
+                            style="opacity: 1; height: 2rem"
+                        />
+                        <img
+                            src="player_icon4.png"
+                            class="player-control-icon"
+                        />
+                        <img
+                            src="player_icon5.png"
+                            class="player-control-icon"
+                        />
+                    </div>
+                    <div class="playback-bar">
+                        <span class="curr-time">00:00</span>
+                        <input
+                            type="range"
+                            min="0"
+                            max="100"
+                            class="progress-bar"
+                        />
+                        <span class="tot-time">03:24</span>
+                    </div>
+                </div>
+                <div class="controls"></div>
+            </div>
+        </div>
+    </body>
+</html>
